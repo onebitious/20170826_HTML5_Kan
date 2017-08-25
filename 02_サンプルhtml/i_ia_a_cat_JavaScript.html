@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <style>
+        #_large,
+        #_small,
+        #_color {
+            float: right;
+            margin-left: 10px;
+        }
+        
+        #_text {
+            text-align: justify;
+        }
+
+    </style>
+</head>
+
+<body>
+    <button id="_cat" type="button" value="吾輩は猫である">吾輩は猫である</button>
+    <button id="_railway" type="button" value="銀河鉄道の夜">銀河鉄道の夜</button>
+    <button id="_gate" type="button" value="羅城門">羅城門</button>
+    <button id="_color" type="button" value="色">ナイトモード ON</button>
+    <button id="_small" type="button" value="サイズ 小">サイズ 小</button>
+    <button id="_large" type="button" value="サイズ 大">サイズ 大</button>
+
+    <p id="_text"></p>
+
+    <script>
+        //吾輩は猫である
+        var _click = document.getElementById("_cat");
+        _click.addEventListener('click', function() {
+            _text.innerHTML = "　吾輩は猫である。名前はまだ無い。<br />　どこで生れたかとんと見当がつかぬ。「何でも薄暗い」じめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮にて食うという話である。";
+
+        });
+
+        //銀河鉄道の夜
+        var _click = document.getElementById("_railway");
+        _click.addEventListener('click', function() {
+            _text.innerHTML = "　「ではみなさんは、そういうふうに川だと云われたり、乳の流れたあとだと云われたりしていたこのぼんやりと白いものがほんとうは何かご承知ですか。」先生は、黒板に吊した大きな黒い星座の図の、上から下へ白くけぶった銀河帯のようなところを指しながら、みんなに問をかけました。<br />　カムパネルラが手をあげました。 それから四五人手をあげました。 ジョバンニも手をあげようとして、 急いでそのままやめました。 たしかにあれがみんな星だと、 いつか雑誌で読んだのでしたが、 このごろはジョバンニはまるで毎日教室でもねむく、 本を読むひまも読む本もないので、 なんだかどんなこともよくわからないという気持ちがするのでした。";
+        });
+
+
+        //羅城門
+        var _click = document.getElementById("_gate");
+        _click.addEventListener('click', function() {
+            _text.innerHTML = "　ある日の暮方の事である。一人の下人が、羅生門の下で雨やみを待っていた。<br />　広い門の下には、この男のほかに誰もいない。ただ、所々丹塗の剥げた、大きな円柱に、蟋蟀が一匹とまっている。羅生門が、朱雀大路にある以上は、この男のほかにも、雨やみをする市女笠や揉烏帽子が、もう二三人はありそうなものである。それが、この男のほかには誰もいない。";
+        });
+
+        //ナイトモードON OFF
+        flag = false;
+        var _color = document.getElementById("_color");
+        var _body = document.getElementsByTagName("body")[0];
+        _color.addEventListener('click', function() {
+            if (flag == false) {
+                _color.innerHTML = "ナイトモード OFF";
+                flag = true;
+                _body.style.backgroundColor = '#F5DEB3';
+            } else {
+                _color.innerHTML = "ナイトモード ON";
+                flag = false;
+                _body.style.backgroundColor = '#FFFFFF';
+            }
+        });
+
+        //フォントサイズ
+        var _size = 12;
+        var _large = document.getElementById("_large");
+        _large.addEventListener('click', function() {
+            _size = _size + 1;
+            _text.style.fontSize = _size + "pt";
+        });
+
+        var _small = document.getElementById("_small");
+        _small.addEventListener('click', function() {
+            _size = _size - 1;
+            _text.style.fontSize = _size + "pt";
+        });
+
+    </script>
+</body>
+
+</html>

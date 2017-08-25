@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<meta name="generator" content="Adobe InDesign 12.1" />
+		<meta property="ibooks:specified-fonts">true</meta>
+		<dc:title>吾輩は猫である</dc:title>
+		<dc:date>2017-08-16T13:02:24Z</dc:date>
+		<dc:language>ja-JP</dc:language>
+		<meta property="dcterms:modified">2017-08-16T13:02:24Z</meta>
+		<dc:identifier id="bookid">urn:uuid:c79b9d49-6896-4c0c-8a1c-85ab9de7d164</dc:identifier>
+	</metadata>
+	<manifest>
+		<item id="吾輩は猫である" href="%E5%90%BE%E8%BC%A9%E3%81%AF%E7%8C%AB%E3%81%A7%E3%81%82%E3%82%8B.xhtml" media-type="application/xhtml+xml" />
+		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+		<item id="toc" href="toc.xhtml" media-type="application/xhtml+xml" properties="nav" />
+		<item id="idGeneratedStyles.css" href="css/idGeneratedStyles.css" media-type="text/css" />
+		<item id="SourceHanSerif-Bold.otf" href="font/SourceHanSerif-Bold.otf" media-type="application/vnd.ms-opentype" />
+		<item id="SourceHanSerif-Heavy.otf" href="font/SourceHanSerif-Heavy.otf" media-type="application/vnd.ms-opentype" />
+		<item id="SourceHanSerif-Regular.otf" href="font/SourceHanSerif-Regular.otf" media-type="application/vnd.ms-opentype" />
+	</manifest>
+	<spine toc="ncx" page-progression-direction="rtl">
+		<itemref idref="吾輩は猫である" />
+	</spine>
+</package>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>縦書き</title>
+    <style>
+        p {
+            border: 1px solid #000000;
+            margin: 0 0 10px 0;
+            padding: 0.25em;
+            width: 200px;
+            height: 300px;
+            line-height: 1.25em;
+            text-indent: 1em;
+            text-align: justify;
+            /*↓ 文字回転*/
+            /*            text-orientation: upright;*/
+            /*↓ 縦中横　※ブラウザ未サポート*/
+            text-combine-upright: digits 2;
+/*            right: 0;*/
+        }
+        
+        ._vertical_rl {
+            writing-mode: vertical-rl;
+        }
+        
+        ._vertical_lr {
+            writing-mode: vertical-lr;
+        }
+        
+        ._upright {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+        
+        ._sideways {
+            writing-mode: vertical-rl;
+            text-orientation: sideways;
+        }
+        
+        ._all {
+            writing-mode: vertical-rl;
+        }
+        
+        ._upright_all {
+            text-combine-upright: all;
+            color:red;
+            /*digits 2*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="_vertical_rl">vertical-rl　吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。「何でも薄暗い」じめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮にて食うという話である。</p>
+        <p class="_vertical_lr">vertical-lr　吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。「何でも薄暗い」じめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮にて食うという話である。</p>
+        <p class="_upright">text-orientation: upright;　吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。「何でも薄暗い」じめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮にて食うと。</p>
+        <p class="_sideways">vertical-lr　吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。「何でも薄暗い」じめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮にて食うという話である。</p>
+        <p class="_all">vertical-lr　<span class="_upright_all">90</span>吾輩は猫である。名前はまだ無い。<span class="_upright_all">2017</span>年どこで生れたかとんと見当がつかぬ。「何でも薄暗い」じめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮にて食うという話である。</p>
+    </div>
+</body>
+
+</html>

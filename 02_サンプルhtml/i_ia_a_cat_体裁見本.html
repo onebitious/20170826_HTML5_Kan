@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>体裁見本</title>
+    <style>
+        p {
+            line-height: 125%;
+        }
+        
+        ._left {
+            text-align: left;
+        }
+        
+        ._right {
+            text-align: right;
+        }
+        
+        ._center {
+            text-align: center;
+        }
+        
+        ._indent {
+            text-indent: 1em;
+        }
+        
+        ._padding01 {
+            padding-left: 1em;
+            text-indent: -1em;
+        }
+        
+        ._padding02 {
+            padding-left: 2em;
+            text-indent: -2em;
+        }
+        
+        ._justify {
+            text-align: justify;
+        }
+        
+        ._dropcap:first-letter {
+            font-size: 200%;
+            float: left;
+            margin: 0 0.125em;
+            padding: 0.25em 0;
+        }
+        
+        ._column {
+            column-count: 3;
+            column-width: 5pt;
+        }
+        
+        ._word_break {
+            word-break: normal;
+        }
+        
+        ._circle {
+            text-emphasis: filled circle #000000;
+        }
+        
+        ._sesame {
+            text-emphasis: filled sesame #000000;
+        }
+        
+        ._hanging-punctuation {
+            text-align: justify;
+            hanging-punctuation: force-end;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p class="_left">左揃え　text-align: left;</p>
+    <br>
+    <p class="_right">右揃え　text-align: right;</p>
+    <br>
+    <p class="_center">中央揃え　text-align: center;</p>
+    <br>
+    <p class="_justify">ジャスティファイ　 text-align: justify;　吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当とうがつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。</p>
+    <br>
+    <p class="_indent">文頭１角アキ　 text-indent: 1em;　吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当とうがつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。</p>
+    <br>
+    <p class="_padding01">箇条書き１文字分　 padding-left: 1em; text-indent: -1em;　吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当とうがつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。</p>
+    <br>
+    <p class="_padding02">箇条書き２文字分　 padding-left: 2em; text-indent: -2em;　吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当とうがつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。</p>
+
+    <br>
+    <p class="_dropcap">ドロップキャップ　 font-size: 2em; line-height: 60%; float: left; margin: 0 0.125em; padding: 0.25em 0;　吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当とうがつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。</p>
+
+    <br>
+    <p class="_column">column-count、column-width　吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮にて食うという話である。</p>
+    <br>
+    <p class="_word_break">word_break: normal　吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。「何でも薄暗い」じめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮にて食うという話である。</p>
+    <br>
+    <p class="_ruby">ruby　<ruby>吾<rt>わが</rt>輩<rt>はい</rt></ruby>は<ruby>猫<rt>ねこ</rt></ruby>である。<ruby>名<rt>な</rt>前<rt>まえ</rt></ruby>はまだ<ruby>無<rt>な</rt></ruby>い。どこで<ruby>生<rt>う</rt></ruby>れたかとんと<ruby>見<rt>けん</rt>当<rt>とう</rt></ruby>がつかぬ。「<ruby>何<rt>なん</rt></ruby>でも<ruby>薄<rt>うす</rt>暗<rt>くら</rt></ruby>い」じめじめした<ruby>所<rt>ところ</rt></ruby>でニャーニャー<ruby>泣<rt>な</rt></ruby>いていた<ruby>事<rt>こと</rt></ruby>だけは<ruby>記<rt>き</rt>憶<rt>おく</rt></ruby>している。<ruby>吾<rt>わが</rt>輩<rt>はい</rt></ruby>はここで<ruby>始<rt>はじ</rt></ruby>めて<ruby>人<rt>にん</rt>間<rt>げん</rt></ruby>というものを<ruby>見<rt>み</rt></ruby>た。しかもあとで<ruby>聞<rt>き</rt></ruby>くとそれは<ruby>書<rt>しょう</rt>生<rt>せい</rt></ruby>という<ruby>人<rt>にん</rt>間<rt>げん</rt>中<rt>ちゆう</rt></ruby>で<ruby>一<rt>いち</rt>番<rt>ばん</rt>獰<rt>どう</rt>悪<rt>あく</rt></ruby>な<ruby>種<rt>しゅ</rt>族<rt>ぞく</rt></ruby>であったそうだ。この<ruby>書<rt>しょう</rt>生<rt>せい</rt></ruby>というのは<ruby>時<rt>とき</rt>々<rt>どき</rt>我<rt>われ</rt>々<rt>われ</rt></ruby>を<ruby>捕<rt>つか</rt></ruby>えて<ruby>煮<rt>にて</rt></ruby>て<ruby>食<rt>く</rt></ruby>うという<ruby>話<rt>はなし</rt></ruby>である。</p>
+    <br>
+    <p>kenten　<span class="_circle">吾輩は猫である。</span><span class="_sesame">名前はまだ 無い。</span></p>
+    <br>
+    <p class="_hanging-punctuation">hanging-punctuation: force-end　吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。「何でも薄暗い」じめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮にて食うという話である。</p>
+
+
+</body>
+
+</html>
